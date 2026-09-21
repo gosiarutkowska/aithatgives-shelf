@@ -1,0 +1,42 @@
+name: Put an app on the shelf
+description: Submit an app made with AI and given away — free, no ads, no data collected.
+title: "App: "
+labels: ["shelf"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The bar is the rule on aithatgives.org — all three lines, no exceptions.
+  - type: input
+    id: name
+    attributes: { label: Name, placeholder: What is it called? }
+    validations: { required: true }
+  - type: textarea
+    id: does
+    attributes: { label: What it does, placeholder: One or two plain sentences. }
+    validations: { required: true }
+  - type: textarea
+    id: who
+    attributes: { label: Who it's for }
+    validations: { required: true }
+  - type: textarea
+    id: doesnt
+    attributes: { label: What it doesn't do, description: The honest limits. This is the part people trust. }
+    validations: { required: true }
+  - type: input
+    id: platform
+    attributes: { label: Platform, placeholder: Android / iOS / web / desktop / CLI }
+    validations: { required: true }
+  - type: input
+    id: languages
+    attributes: { label: Languages, placeholder: "English / Polski / Українська — the languages the app itself speaks" }
+    validations: { required: true }
+  - type: checkboxes
+    id: rule
+    attributes:
+      label: The rule
+      options:
+        - { label: "It is FREE — no price, no subscription, no “pro” version.", required: true }
+        - { label: "It has NO ADS — nothing is sold, so nothing is sold to the user.", required: true }
+        - { label: "It collects NO DATA — no account, no tracking; it may download public data, it never uploads yours.", required: true }
+        - { label: "It says openly that it was made with AI.", required: true }

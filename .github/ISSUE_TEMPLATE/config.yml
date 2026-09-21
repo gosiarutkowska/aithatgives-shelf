@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: E-mail instead
+    url: mailto:hello@aithatgives.org
+    about: If you would rather not use GitHub, write to hello@aithatgives.org.
