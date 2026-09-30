@@ -1,0 +1,32 @@
+name: An idea
+description: Not a programmer? Tell me what bugs you and what a small app should fix.
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: bugs
+    attributes:
+      label: What bugs you?
+      description: The thing you run into every week. Plain words.
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who else has this problem?
+    validations:
+      required: true
+  - type: textarea
+    id: instead
+    attributes:
+      label: What should happen instead?
+      description: What would the app do, in one or two sentences?
+    validations:
+      required: true
+  - type: checkboxes
+    id: rule
+    attributes:
+      label: The rule
+      options:
+        - label: I know the result would be free, with no ads and no data collected — and that nobody gets paid, including me.
+          required: true
